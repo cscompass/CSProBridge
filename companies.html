@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Practical training and capability development for Customer Success, Support, Implementation and other customer-facing teams.">
+  <title>For Companies | CSProBridge</title><link rel="stylesheet" href="css/styles.css"><script src="js/main.js" defer></script>
+  <style>
+    .b2b-hero{background:var(--navy);color:#d3e0e2;padding:88px 0 94px}
+    .b2b-hero .eyebrow,.b2b-proof .eyebrow,.b2b-final .eyebrow{color:#91d2c5}
+    .b2b-hero h1{color:#fff;max-width:850px}
+    .b2b-hero p:not(.eyebrow){max-width:730px;color:#c2d1d4;font-size:1.12rem;line-height:1.75;margin-bottom:1.8rem}
+    .b2b-hero .button-outline{color:#fff;border-color:#779098}
+    .b2b-hero .button-outline:hover{border-color:var(--teal)}
+    .b2b-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+    .b2b-card{background:#fff;border:1px solid var(--line);padding:1.6rem;min-width:0}
+    .b2b-card h3{font-size:1.17rem;letter-spacing:-.025em;margin:.3rem 0 .65rem}
+    .b2b-card p{color:var(--muted);font-size:.89rem;line-height:1.6;margin:0 0 .75rem}
+    .b2b-card ul{list-style:none;padding:0;margin:.8rem 0 0;display:grid;gap:.38rem;color:#536770;font-size:.83rem;line-height:1.5}
+    .b2b-card li{padding-left:1rem;position:relative}
+    .b2b-card li:before{content:"";position:absolute;left:0;top:.65em;width:5px;height:5px;background:var(--teal);border-radius:50%}
+    .b2b-card .card-index{display:block;margin-bottom:.8rem}
+    .capability-grid .b2b-card{min-height:310px;border-top:3px solid var(--teal)}
+    .capability-grid .b2b-card:first-child{background:var(--navy);border-color:var(--navy);color:#d3e0e2}
+    .capability-grid .b2b-card:first-child h3{color:#fff}
+    .capability-grid .b2b-card:first-child .card-index{color:#91d2c5}
+    .capability-grid .b2b-card:first-child p,.capability-grid .b2b-card:first-child ul{color:#c2d1d4}
+    .program-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+    .program-grid .b2b-card{min-height:205px;background:#fff;border-top:2px solid #b6d7d0;padding:1.35rem}
+    .program-grid h3{font-size:1rem}
+    .program-grid .card-index{margin-bottom:1rem}
+    .engagement{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-block:1px solid #35515c;background:#102936}
+    .engagement-step{padding:1.45rem 1.35rem 1.5rem;border-right:1px solid #35515c;position:relative}
+    .engagement-step:first-child{padding-left:0}
+    .engagement-step:last-child{border:0}
+    .engagement-step .card-index{display:block;color:#91d2c5;margin-bottom:.8rem}
+    .engagement-step h3{color:#fff;font-size:1.1rem;margin-bottom:.45rem}
+    .engagement-step p{color:#c2d1d4;font-size:.86rem;line-height:1.6;margin:0}
+    .b2b-proof{background:var(--navy);color:#d3e0e2}
+    .b2b-proof h2{color:#fff}
+    .b2b-proof .section-heading>p{color:#c2d1d4}
+    .proof-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+    .proof-item{border-top:1px solid #527079;padding:1.35rem 1rem 0 0}
+    .proof-item strong{display:block;color:#9bd8cc;font:700 1.08rem var(--font-head);letter-spacing:.04em;margin-bottom:.55rem}
+    .proof-item:nth-child(2) strong{font-size:1rem}
+    .proof-item p{color:#c2d1d4;font-size:.88rem;line-height:1.6;margin:0}
+    .b2b-final{margin-top:76px}
+    @media(max-width:1000px){.program-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.capability-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:800px){.engagement{grid-template-columns:repeat(2,minmax(0,1fr))}.engagement-step:nth-child(2){border-right:0}.engagement-step:nth-child(3){padding-left:0;border-top:1px solid #35515c}.engagement-step:nth-child(4){border-top:1px solid #35515c}.proof-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:600px){.b2b-hero{padding:58px 0 64px}.b2b-card-grid,.capability-grid,.program-grid{grid-template-columns:1fr}.capability-grid .b2b-card,.program-grid .b2b-card{min-height:0}.engagement{grid-template-columns:1fr}.engagement-step,.engagement-step:first-child,.engagement-step:nth-child(3){padding:1.2rem 0;border-right:0;border-bottom:1px solid #35515c;border-top:0}.engagement-step:last-child{border-bottom:0}.proof-grid{grid-template-columns:1fr 1fr}.proof-item{padding-right:.5rem}.b2b-final{margin-top:50px}}
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-inner"><a class="brand" href="index.html"><img src="assets/images/csprobridge-logo.png" alt="CSProBridge"></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Open navigation</span><span></span><span></span><span></span></button><nav class="primary-nav" id="primary-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="opportunities.html">Opportunities</a><a href="interview-coaching.html">Interview Coaching</a><a href="training.html">Training</a><a href="membership.html">Membership</a><a class="active" href="companies.html" aria-current="page">For Companies</a><a href="resources.html">Resources</a><a href="about.html">About</a><a class="button button-small nav-cta" href="opportunities.html">Explore Opportunities</a></nav></div></header>
+<main id="main">
+  <section class="b2b-hero"><div class="wrap"><p class="eyebrow">FOR COMPANIES</p><h1>Build stronger customer-facing teams.</h1><p>Practical training and development programs for Customer Success, Support, Implementation and other customer-facing teams.</p><div class="actions"><a class="button" href="mailto:hello@csprobridge.com?subject=Team%20program%20enquiry">Discuss a Team Program <span aria-hidden="true">→</span></a><a class="button button-outline" href="#programs">Explore Programs <span aria-hidden="true">↓</span></a></div></div></section>
+  <section class="section wrap" id="capabilities"><div class="section-heading"><div><p class="eyebrow">02 · BUILD CAPABILITY</p><h2>Develop the capabilities your teams need</h2></div><p>Targeted programs designed around the roles, skills and business situations that matter to your organization.</p></div><div class="b2b-card-grid capability-grid">
+    <article class="b2b-card"><span class="card-index">01 · CAPABILITY</span><h3>Customer Success capability</h3><p>Build stronger CSMs and customer-facing teams.</p><ul><li>Customer onboarding</li><li>Adoption and value realization</li><li>Customer intelligence</li><li>Health and risk management</li><li>Renewal and expansion</li><li>Executive engagement</li><li>Strategic Customer Success</li></ul></article>
+    <article class="b2b-card"><span class="card-index">02 · CAREER DEVELOPMENT</span><h3>Role &amp; career development</h3><p>Help professionals grow within your organization.</p><ul><li>New-hire enablement</li><li>CSM development</li><li>Support-to-Success transitions</li><li>Individual development programs</li><li>Manager coaching</li><li>Leadership development</li></ul></article>
+    <article class="b2b-card"><span class="card-index">03 · LEADERSHIP</span><h3>Leadership development</h3><p>Prepare current and emerging leaders.</p><ul><li>First-time CS leadership</li><li>Managing CSM teams</li><li>Strategic thinking</li><li>Executive communication</li><li>Stakeholder management</li><li>Coaching and team development</li></ul></article>
+    <article class="b2b-card"><span class="card-index">04 · CUSTOMER SKILLS</span><h3>Customer-facing skills</h3><p>Strengthen the skills that influence customer outcomes.</p><ul><li>Communication</li><li>Discovery</li><li>Presentation</li><li>Business conversations</li><li>Stakeholder management</li><li>Customer conversations</li></ul></article>
+    <article class="b2b-card"><span class="card-index">05 · BUILT AROUND YOUR NEED</span><h3>Custom programs</h3><p>Build a focused program around a specific capability gap or business need, with scope and delivery shaped together.</p></article>
+  </div></section>
+  <section class="section section-soft" id="programs"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">03 · DESIGNED FOR YOUR TEAM</p><h2>One framework doesn't fit every team.</h2></div><p>Programs can be designed around your team's role, experience level, business context and current capability gaps.</p></div><div class="b2b-card-grid program-grid">
+    <article class="b2b-card"><span class="card-index">01</span><h3>New-hire enablement</h3><p>Get new team members productive faster.</p></article><article class="b2b-card"><span class="card-index">02</span><h3>Team capability programs</h3><p>Build consistent skills across the team.</p></article><article class="b2b-card"><span class="card-index">03</span><h3>Role transition programs</h3><p>Help people move successfully into new responsibilities.</p></article><article class="b2b-card"><span class="card-index">04</span><h3>Manager &amp; leadership programs</h3><p>Develop managers who can coach, lead and scale teams.</p></article><article class="b2b-card"><span class="card-index">05</span><h3>Custom programs</h3><p>Build a program around a specific capability gap or business need.</p></article>
+  </div></div></section>
+  <section class="section b2b-proof"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">04 · HOW WE WORK</p><h2>From capability gap to practical application</h2></div></div><div class="engagement">
+    <article class="engagement-step"><span class="card-index">01 · DISCOVER</span><h3>Understand the need</h3><p>Understand the team's roles, experience and capability gaps.</p></article><article class="engagement-step"><span class="card-index">02 · DESIGN</span><h3>Shape the program</h3><p>Build the program around the organization's objectives.</p></article><article class="engagement-step"><span class="card-index">03 · DELIVER</span><h3>Practice in context</h3><p>Interactive sessions using frameworks, scenarios, exercises and real situations.</p></article><article class="engagement-step"><span class="card-index">04 · REINFORCE</span><h3>Make learning stick</h3><p>Practical assignments, feedback and follow-up to help the learning stick.</p></article>
+  </div></div></section>
+  <section class="section wrap"><div class="section-heading"><div><p class="eyebrow">05 · BUILT FOR CUSTOMER-FACING TEAMS</p><h2>Programs for teams across the organization</h2></div></div><div class="b2b-card-grid">
+    <article class="b2b-card"><span class="card-index">01 · CUSTOMER SUCCESS</span><h3>Customer Success leaders</h3><p>Build stronger CSM capabilities and team consistency.</p></article><article class="b2b-card"><span class="card-index">02 · CUSTOMER SUPPORT</span><h3>Support leaders</h3><p>Develop customer communication and transition capabilities.</p></article><article class="b2b-card"><span class="card-index">03 · IMPLEMENTATION</span><h3>Implementation leaders</h3><p>Strengthen customer-facing delivery skills.</p></article><article class="b2b-card"><span class="card-index">04 · HR &amp; L&amp;D</span><h3>HR &amp; L&amp;D teams</h3><p>Create targeted professional development programs.</p></article><article class="b2b-card"><span class="card-index">05 · BUSINESS LEADERSHIP</span><h3>Founders &amp; business leaders</h3><p>Build customer-facing capabilities as the organization scales.</p></article>
+  </div></section>
+  <section class="section b2b-proof"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">06 · EXPERIENCE THAT MATTERS</p><h2>Experience that comes from doing the work</h2></div><p>CSProBridge brings more than 20 years of Customer Success leadership experience into practical learning and development programs.</p></div><div class="proof-grid">
+    <div class="proof-item"><strong>20+ YEARS</strong><p>Building and scaling Customer Success organizations.</p></div><div class="proof-item"><strong>NA · APAC · EMEA</strong><p>Experience working across global teams and markets.</p></div><div class="proof-item"><strong>REAL-WORLD FRAMEWORKS</strong><p>Learning built from practical customer and business situations.</p></div><div class="proof-item"><strong>OUTCOME-FOCUSED</strong><p>Programs designed to change capability and behavior, not just deliver content.</p></div>
+  </div></div></section>
+  <section class="closing-cta wrap b2b-final"><div><p class="eyebrow">LET'S TALK</p><h2>Have a capability gap you want to solve?</h2><p>Tell us about your team, the capability you want to build and what you're trying to achieve. We'll explore whether CSProBridge is the right fit.</p></div><div class="actions"><a class="button button-light" href="mailto:hello@csprobridge.com?subject=Team%20capability%20enquiry">Start a conversation <span aria-hidden="true">→</span></a></div></section>
+</main>
+<footer class="site-footer"><div class="wrap"><div class="footer-main"><div class="footer-brand"><a class="brand brand-light" href="index.html"><img src="assets/images/csprobridge-logo.png" alt="CSProBridge"></a><p>Building skills. Bridging careers.</p></div><div class="footer-links"><a href="opportunities.html">Opportunities</a><a href="interview-coaching.html">Interview Coaching</a><a href="training.html">Training</a><a href="membership.html">Membership</a><a href="companies.html">For Companies</a><a href="resources.html">Resources</a><a href="about.html">About</a></div></div><div class="footer-bottom"><span>© 2026 CSProBridge. All rights reserved.</span><span>Building skills. Bridging careers.</span></div></div></footer>
+</body></html>

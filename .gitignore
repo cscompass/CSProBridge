@@ -1,0 +1,27 @@
+@"
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Local development
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+"@ | Set-Content D:\Apps\CSProBridge\.gitignore
