@@ -1,0 +1,9 @@
+.git/
+.wrangler/
+.vscode/
+.gitignore
+.assetsignore
+wrangler.jsonc
+export_jobs.py
+*.py
+*.log
